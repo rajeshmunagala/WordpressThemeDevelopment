@@ -22,19 +22,8 @@ if(have_posts()):
         }
         ?>
         </p>
-           <?php if ($post->post_exerpt) { ?>
-                <p>
-                    <?php the_excerpt();?>
-                    <a href="<?php echo the_permalink(); ?>">Read more &raquo;</a>
-                </p>
-          <?php  } else {
-                    
-                    the_content();
-            }?>
-            
-      
+        <?php the_content();?>
     </article>
-    
     <?php endwhile;
 else:
     echo "<p>You don't have posts</p>";

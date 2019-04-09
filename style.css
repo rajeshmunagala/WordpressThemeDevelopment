@@ -62,7 +62,7 @@ article.post:last-of-type{
 /* site Header Menu */
 .site-header nav ul li{
     margin-right: 5px;
-}
+} 
 
 .site-header nav ul li a:link,
 .site-header nav ul li a:visited{
@@ -76,7 +76,9 @@ article.post:last-of-type{
     background-color: #ECECEC;
 }
 .site-header nav ul li.current-menu-item a:link,
-.site-header nav ul li.current-menu-item a:visited
+.site-header nav ul li.current-menu-item a:visited,
+.site-header nav ul li.current-page-ancestor a:link,
+.site-header nav ul li.current-page-ancestor a:visited
 {
     background-color: #006ec3;
     color:#fff;
@@ -119,4 +121,48 @@ div.info-box h4 {
 }
 div.info-box p{
     font-size:  85%;
+}
+
+/*Children links */
+.childern-links{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: .8rem;
+}
+.childern-links li{
+    margin-right: 
+}
+.childern-links li{
+    margin-right: 20px;
+}
+.childern-links .parent-link{
+    float: left;
+    margin-right: 20px;
+    padding-right: 20px;
+    border-right: 1px solid #DDD;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.childern-links .parent-link a:link,
+.childern-links .parent-link a:visited{
+    color: #333;
+}
+.childern-links .current_page_item a:link,
+.childern-links .current_page_item a:visited{
+    border-bottom: 1px solid #ddd;
+    color: #333;
+    cursor: default;
+}
+
+/*Post styles*/
+.post h2{
+    margin-bottom: 0;
+}
+p.post-info{
+    font-size: 87%;
+    color: #999;
+}
+p.post-info a:link,
+p.post-info a:visited {
+    color: #999;
 }
