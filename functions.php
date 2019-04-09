@@ -8,7 +8,6 @@ function learningWordpress_resources(){
 add_action('wp_enqueue_scripts', 'learningWordpress_resources');
 
 //---Navigation menus----
-
 register_nav_menus(array(
     'primary' =>__('Primary Menu'),
     'footer' => __('Footer Menu'),    
@@ -40,3 +39,21 @@ function custom_excerpt_length(){
 }
 
 add_filter('excerpt_length', 'custom_excerpt_length');
+
+
+
+
+
+function learningwordpress_setup(){
+        //---Navigation menus----
+    register_nav_menus(array(
+        'primary' =>__('Primary Menu'),
+        'footer' => __('Footer Menu'),    
+    ));
+    //Featured image support
+    add_theme_support( 'post-thumbnails');
+    add_image_size('samll-thumbnail', 180, 120, true);
+    add_image_size('banner-image', 920, 210, true);
+}
+add_action('after_setup_theme', 'learningwordpress_setup');
+
